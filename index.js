@@ -5,13 +5,9 @@ const shell = require('shelljs')
 try {
   const style = core.getInput('style');
   console.log(`Using style ${style}!`);
-  const time = (new Date()).getTime();
+  const time = Math.round((new Date()).getTime() / 1000);
   core.setOutput("build-number", time);
   shell.exec(`xcrun agvtool new-version -all ${time}`);
-
-  // Get the JSON webhook payload for the event that triggered the workflow
-  const payload = JSON.stringify(github.context.payload, undefined, 2)
-  console.log(`The event payload: ${payload}`);
 } catch (error) {
   core.setFailed(error.message);
 }
