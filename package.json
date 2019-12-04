@@ -1,0 +1,25 @@
+{
+  "name": "xcode-version-setter",
+  "version": "1.0.0",
+  "description": "GitHub Action to set Build Numbers for Xcode projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thermogl/xcode-version-setter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thermogl/xcode-version-setter/issues"
+  },
+  "homepage": "https://github.com/thermogl/xcode-version-setter#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@actions/github": "^1.1.0",
+    "shelljs": "^0.8.3"
+  }
+}
