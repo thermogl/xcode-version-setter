@@ -5,7 +5,10 @@ GitHub Action to set Build Numbers for Xcode projects
 
 ### `style`
 
-**Required** The style of build number to use. Default `"time"`.
+**Required** The style of build number to use. Default `"time"`. 
+
+- time: Current Unix Time in Seconds (eg: 1575499222)
+- hextime: Current Unix Time in Second in Hex: (eg: 5de83486)
 
 ## Outputs
 
@@ -17,4 +20,4 @@ The build number that was generated and set
 
 uses: thermogl/xcode-version-setter@v1
 with:
-  style: 'time'
+	style: 'time'

@@ -2,7 +2,7 @@ name: 'xcode-version-setter'
 description: 'set Build Numbers for Xcode projects'
 inputs:
   style:  # id of input
-    description: 'The style of build number to use'
+    description: 'The style of build number to use (time, hextime)'
     required: true
     default: 'time'
 outputs:
