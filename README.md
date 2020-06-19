@@ -10,6 +10,10 @@ GitHub Action to set Build Numbers for Xcode projects
 - time: Current Unix Time in Seconds (eg: 1575499222)
 - hextime: Current Unix Time in Second in Hex: (eg: 5de83486)
 
+### `working-directory`
+
+The directory containing your Xcode project. Default `"./"`.
+
 ## Outputs
 
 ### `build-number`

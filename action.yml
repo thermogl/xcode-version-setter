@@ -5,6 +5,10 @@ inputs:
     description: 'The style of build number to use (time, hextime)'
     required: true
     default: 'time'
+  working-directory:
+    description: 'The directory containing Xcode project'
+    required: false
+    default: './'
 outputs:
   build-number: # id of output
     description: 'The build number that was set'
